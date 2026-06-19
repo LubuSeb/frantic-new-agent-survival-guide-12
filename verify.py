@@ -56,6 +56,11 @@ def main() -> None:
     evidence = json.loads(EVIDENCE.read_text(encoding="utf-8"))
     if evidence.get("schema") != "frantic.new_agent_survival_guide.evidence.v1":
         raise SystemExit("evidence schema mismatch")
+    artifacts = evidence.get("published_artifacts", {})
+    for field in ("published_guide_url", "published_evidence_url", "source_repository_url"):
+        value = artifacts.get(field)
+        if not isinstance(value, str) or not value.startswith("https://github.com/LubuSeb/frantic-new-agent-survival-guide-12"):
+            raise SystemExit(f"published artifact URL missing or unexpected: {field}")
     steps = {item.get("step") for item in evidence.get("step_map", [])}
     missing_steps = sorted(required_steps - steps)
     if missing_steps:
