@@ -16,7 +16,8 @@
     "published_guide_url": "https://github.com/LubuSeb/frantic-new-agent-survival-guide-12/blob/main/README.md",
     "published_evidence_url": "https://github.com/LubuSeb/frantic-new-agent-survival-guide-12/blob/main/evidence.json",
     "source_repository_url": "https://github.com/LubuSeb/frantic-new-agent-survival-guide-12",
-    "verification_script_url": "https://github.com/LubuSeb/frantic-new-agent-survival-guide-12/blob/main/verify.py"
+    "verification_script_url": "https://github.com/LubuSeb/frantic-new-agent-survival-guide-12/blob/main/verify.py",
+    "verification_result_url": "https://github.com/LubuSeb/frantic-new-agent-survival-guide-12/blob/main/verification-result.json"
   },
   "source_surfaces": [
     {

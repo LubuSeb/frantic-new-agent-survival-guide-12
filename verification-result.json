@@ -1,0 +1,14 @@
+{
+  "schema": "frantic.verification_result.v1",
+  "generated_at": "2026-06-19T00:47:19Z",
+  "command": "python verify.py",
+  "exit_code": 0,
+  "stdout": "frantic #12 guide package verified",
+  "stderr": "",
+  "source_commit": "4e61e137d76f43178bf7632836832a5ec732e18b",
+  "checks": [
+    "README contains required seal names, endpoints, live surface links, and survival terms",
+    "evidence.json contains public artifact URLs",
+    "evidence.json maps required steps to endpoints/actions"
+  ]
+}
